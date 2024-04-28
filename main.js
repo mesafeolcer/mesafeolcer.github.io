@@ -1,5 +1,9 @@
+var kanal = 0;
+
 function yayinSec() {
-	return Math.floor(Math.random() * 16);
+	kanal += 1;
+	if (kanal >= 17) kanal = kanal % 17;
+	return kanal;
 }
 
 function yayinDegistir() {
