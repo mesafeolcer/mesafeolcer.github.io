@@ -25,9 +25,9 @@ let atandeg = (x) => { return radToDeg(Math.atan(x)) };
 let mesafeHesapla = () => {
 	let sonuc = document.getElementById("sonuc");
 	let aci   = parseInt(document.getElementById("deger").value);
+		
 	
-	
-	sonuc.value = tandeg(90 - 2*atandeg(aci/70)).toString();
+	sonuc.value = Math.tan( (1/180) * Math.PI * (90 - 2 * Math.atan(aci/70)) ).toString();
 	
 	return false;
 }
