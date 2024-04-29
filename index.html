@@ -5,12 +5,31 @@
 	</head>
 	
 	<body>
-		<div>
-			<img id="yayin" src="resimler/0.jpg" alt="metehan hocam kral" class="inner-image"> 		
-			<img src="resimler/teve.jpg" alt="teve"> 
+		<div style="display: flex; float: left">
+			<div>
+				<img id="yayin" src="resimler/0.jpg" alt="metehan hocam kral" class="inner-image"></img>
+				<img src="resimler/teve.jpg" alt="teve"></img>
+			</div>
 			
-			<input type="image" src="resimler/gumanda.png" alt="gumanda" onclick="yayinDegistir();"> 
+			<div style="display: flex; vertical-align:middle">
+				<input type="image" src="resimler/gumanda.png" alt="gumanda" onclick="yayinDegistir();"> </input>
+				
+				
+				
+				<div style="vertical-align:top;">
+					<div style="vertical-align:middle">
+						<text style="font-size:48px"> Açı: </text>
+						<input type="number" style="height: 5%; font-size:24px" onchange="mesafeHesapla();" id="deger">	
+					</div>
+					
+					<div style="vertical-align:middle">
+						<text style="font-size:48px"> Mesafe: </text>
+						<input type="text" style="width: 55%;height: 5%; font-size:24px" id="sonuc" disabled>	
+					</div>
+				</div>
+			</div>
+			
+
 		</div>
-		
 	</body>
 </html> 

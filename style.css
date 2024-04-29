@@ -1,15 +1,6 @@
-h1 {text-align: center;}
-
-p {
-	text-align: center;
-}
-
-div {
-	position: relative;
-}
-
 .inner-image {
 	position: absolute;
+
 	top: 90px;
 	left: 450px;
 	height: 900;
