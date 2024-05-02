@@ -17,17 +17,18 @@ let yayinDegistir = () => {
 	return false;
 }
 
-let degToRad = (x) => { return x * (Math.PI / 180) }
-let radToDeg = (x) => { return x * (180 / Math.PI) }
-let tandeg  = (x) => { return (Math.tan(degToRad(x))) };
-let atandeg = (x) => { return radToDeg(Math.atan(x)) };	
+let degToRad = (x) => { return x * (Math.PI / 180); }
+let radToDeg = (x) => { return x * (180 / Math.PI); }
+
+let tan  = (x) => { return Math.tan(degToRad(x)); }
+let atan = (x) => { return (Math.atan(degToRad(x))); }
+let cot  = (x) => { return 1/tan(x); }
 
 let mesafeHesapla = () => {
 	let sonuc = document.getElementById("sonuc");
 	let aci   = parseInt(document.getElementById("deger").value);
-		
 	
-	sonuc.value = Math.tan( (1/180) * Math.PI * (90 - 2 * Math.atan(aci/70)) ).toString();
+	sonuc.value =(635040000 - (aci ** 2))/(50400 * aci);
 	
 	return false;
 }
