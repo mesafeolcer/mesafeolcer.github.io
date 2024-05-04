@@ -1,8 +1,25 @@
-.inner-image {
+#stream {
 	position: absolute;
 
 	top: 90px;
 	left: 450px;
-	height: 900;
-	width: 800;
+	height: 900px;
+	width: 800px;
+}
+
+#degrees {
+	height: 5%; 
+	font-size:24px
+}
+
+#degrees {
+	width: 15%;
+	height: 5%; 
+	font-size:24px
+}
+
+#result {
+	width: 40%;
+	height: 5%;
+	font-size:24px
 }
