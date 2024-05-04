@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	document.querySelector('#degrees').addEventListener('click', (ev) => {
 		const inputValue = parseInt(ev.target.value);
-		const outputBox  = document.getElementById("result");
+		const outputBox  = document.querySelector("#result");
 		
-		outputBox.value  = (635040000 - (aci ** 2)) / (50400 * inputValue);
+		outputBox.value  = (635040000 - (inputValue ** 2)) / (50400 * inputValue);
 		
 		return false;
 	})
